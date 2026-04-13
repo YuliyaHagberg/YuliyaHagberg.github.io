@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Yuliya Hagberg</title>
+  <meta name="description" content="Featured projects by Yuliya Hagberg — web apps, UX design, AI integrations, and research. Filter by category or technology." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yuliya Hagberg — Frontend Developer & Designer" />
+  <meta property="og:description" content="Stockholm-based developer specialising in modern frontend frameworks, UI/UX design, AI integrations, and accessible web experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yuliyahagberg.github.io/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+
+  
+<style>
+  /* Screen-reader only utility */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- Skip Navigation -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Navigation -->
+  
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav__inner">
+    <a href="/" class="nav__logo" aria-label="Yuliya Hagberg — home">YH<span>.</span></a>
+    <ul class="nav__links" role="list">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/experience/">Experience</a></li>
+      <li><a href="/education/">Education</a></li>
+      <li><a href="/skills/">Skills</a></li>
+      <li><a href="/portfolio/">Projects</a></li>
+      <li>
+        <a href="/contact/" class="nav__cta" aria-label="Go to contact page">
+          Contact
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </li>
+    </ul>
+    <button class="nav__burger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-nav">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-nav" class="nav__mobile" role="menu" aria-label="Mobile navigation">
+    <a href="/about/" role="menuitem">About</a>
+    <a href="/experience/" role="menuitem">Experience</a>
+    <a href="/education/" role="menuitem">Education</a>
+    <a href="/skills/" role="menuitem">Skills</a>
+    <a href="/portfolio/" role="menuitem">Projects</a>
+    <a href="/contact/" role="menuitem">Contact</a>
+  </div>
+</nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    
+
+<!-- ── Page Hero ─────────────────────────────────────────────────────── -->
+<section class="page-hero" aria-labelledby="portfolio-hero-heading">
+  <div class="container page-hero__inner">
+    <div class="hero__eyebrow animate">Projects</div>
+    <h1 id="portfolio-hero-heading" class="animate animate-delay-1">
+      Featured <em>work</em>
+    </h1>
+    <p class="hero__bio animate animate-delay-2" style="margin-top:1.25rem; margin-bottom:0;">
+      A selection of programming projects, UX/UI design work, and research. Filter by category or technology stack.
+    </p>
+  </div>
+</section>
+
+<!-- ── Filters + Grid ────────────────────────────────────────────────── -->
+<section class="projects-section" aria-labelledby="projects-heading">
+  <div class="container">
+
+    <h2 id="projects-heading" class="sr-only">All projects</h2>
+
+    <!-- Filter bar — two rows: Category on top, Stack below -->
+    <div class="filter-bar-wrapper" role="group" aria-label="Filter projects">
+
+      <!-- Row 1: Category -->
+      <div class="filter-bar">
+        <span class="filter-bar__label">Category</span>
+        
+        <button
+          class="filter-btn"
+          data-filter="frontend"
+          data-filter-type="category"
+          aria-pressed="false"
+        >Front-end</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="backend"
+          data-filter-type="category"
+          aria-pressed="false"
+        >Back-end</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="design"
+          data-filter-type="category"
+          aria-pressed="false"
+        >Design</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="ml"
+          data-filter-type="category"
+          aria-pressed="false"
+        >ML / DL</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="research"
+          data-filter-type="category"
+          aria-pressed="false"
+        >Research</button>
+        
+      </div>
+
+      <!-- Row 2: Stack -->
+      <div class="filter-bar">
+        <span class="filter-bar__label">Stack</span>
+        
+        <button
+          class="filter-btn"
+          data-filter="Python"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >Python</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="Django"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >Django</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="React"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >React</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="TypeScript"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >TypeScript</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="SvelteKit"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >SvelteKit</button>
+        
+        <button
+          class="filter-btn"
+          data-filter="Figma"
+          data-filter-type="tech"
+          aria-pressed="false"
+        >Figma</button>
+        
+
+        
+      </div>
+
+    </div>
+
+    <!-- Active filter summary (screen-reader friendly) -->
+    
+
+    <!-- Project grid -->
+    
+    <div class="projects-grid">
+      
+        
+
+
+
+<a href="/portfolio/flowback/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for Flowback — Digital Democracy Platform">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    Full-stack · UX / UI Design
+  </div>
+  
+
+  <h3 class="project-card__title">Flowback — Digital Democracy Platform</h3>
+  <p class="project-card__desc">An open-source platform for better organisational decision-making. Lead frontend developer and sole UI/UX designer — responsible for the full interface design in Figma, implementing it in TypeScript/SvelteKit/React, and integrating backend APIs.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>TypeScript</span>
+    
+      <span>SvelteKit</span>
+    
+      <span>React</span>
+    
+      <span>Figma</span>
+    
+      <span>Python / Django</span>
+    
+      <span>Docker</span>
+    
+      <span>WCAG</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+        
+
+
+
+<a href="/portfolio/hci-thesis/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for HCI Research: Decision Support System Design">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    Research · BSc Thesis
+  </div>
+  
+
+  <h3 class="project-card__title">HCI Research: Decision Support System Design</h3>
+  <p class="project-card__desc">Bachelor&#x27;s thesis investigating how the design of decision support systems can be optimised, using the Flowback platform as a case study. Conducted qualitative and quantitative user research, published via DiVA portal.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>HCI Research</span>
+    
+      <span>UX / Usability</span>
+    
+      <span>Survey Design</span>
+    
+      <span>Figma</span>
+    
+      <span>SUS / UEQ</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+        
+
+
+
+<a href="/portfolio/titanic-capstone/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for Titanic Capstone Project">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    ML / Data Science
+  </div>
+  
+
+  <h3 class="project-card__title">Titanic Capstone Project</h3>
+  <p class="project-card__desc">A machine learning capstone project using the Titanic dataset. The project demonstrates the complete ML lifecycle, from data processing and model training to deployment in an interactive web interface with persistent storage.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>Python</span>
+    
+      <span>scikit-learn</span>
+    
+      <span>Pandas</span>
+    
+      <span>Jupyter</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+        
+
+
+
+<a href="/portfolio/ami-conference/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for AMI Conference 2025">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    UX / UI Design
+  </div>
+  
+
+  <h3 class="project-card__title">AMI Conference 2025</h3>
+  <p class="project-card__desc">A web and visual design project for the AMI International Monetary Reform Conference 2025. Responsible for designing the event webpage and promotional materials, including posters and social media graphics — focusing on clear information hierarchy, accessibility, and consistent visual identity across digital formats.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>Figma</span>
+    
+      <span>UX Research</span>
+    
+      <span>Prototyping</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+        
+
+
+
+<a href="/portfolio/wikitrail/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for Wikitrail">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    UX / UI Design
+  </div>
+  
+
+  <h3 class="project-card__title">Wikitrail</h3>
+  <p class="project-card__desc">A mobile application enhancing hiking and outdoor experiences along Solanderleden, a trail network in Norrbotten, Sweden. The app combines a hiking guide with social media functionality, allowing users to navigate the trail, share experiences, and interact in real-time.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>Figma</span>
+    
+      <span>UX Research</span>
+    
+      <span>Prototyping</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+        
+
+
+
+<a href="/portfolio/gui-your-skin/"
+   class="project-card project-card--link reveal"
+   aria-label="View details for GUI Your Skin">
+
+  
+  <div class="project-card__badge" aria-hidden="true">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+    UX / UI Design
+  </div>
+  
+
+  <h3 class="project-card__title">GUI Your Skin</h3>
+  <p class="project-card__desc">A mobile application concept designed to guide users through personalized skincare routines and product recommendations. The project focused on creating a clear, intuitive interface that communicates effectively with users while maintaining a minimal and aesthetically consistent design.</p>
+
+  
+  <div class="project-card__tech" aria-label="Technologies used">
+    
+      <span>Figma</span>
+    
+      <span>UX Research</span>
+    
+      <span>Prototyping</span>
+    
+  </div>
+  
+
+  <div class="project-card__cta" aria-hidden="true">
+    View project
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </div>
+
+</a>
+
+      
+    </div>
+    
+
+  </div>
+</section>
+
+<!-- ── Add-a-project CTA (admin hint) ───────────────────────────────── -->
+<section style="padding-block: clamp(3rem, 6vw, 4.5rem);">
+  <div class="container" style="text-align:center;">
+    <div class="section-label" style="justify-content:center; margin-bottom:1.25rem;" aria-hidden="true">Let's work together</div>
+    <h2 class="reveal" style="margin-bottom:1rem;">Interested in collaborating?</h2>
+    <p class="reveal reveal-delay-1" style="color:var(--muted); margin-inline:auto; margin-bottom:2rem; max-width:48ch;">
+      Whether you have a project in mind, an open role, or just want to explore ideas — I'd love to hear from you.
+    </p>
+    <a href="/contact/" class="btn btn--primary reveal reveal-delay-2">
+      Get in Touch
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+  <div class="container footer-inner">
+    <span class="footer-logo">YH.</span>
+    <span class="footer-copy">&copy; <span id="year"></span> Yuliya Hagberg. Stockholm, Sweden.</span>
+    <nav class="footer-social" aria-label="Social media links">
+      <a href="https://github.com/YuliyaHagberg" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/yuliyahagberg/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="mailto:yuliya.swe@gmail.com" aria-label="Email Yuliya">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </nav>
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="/static/js/main.js"></script>
+  
+
+</body>
+</html>
